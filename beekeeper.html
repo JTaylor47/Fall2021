@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beekeeper.css">
+    <title>BeeKeeper</title>
+    <script type="text/javascript" src="beekeeper.js"></script>
+</head>
+<body>
+    <h1 id="beekeeper">Welcome to BeeKeeper</h1>
+    <img src="bee_logo.jpg" id="beeimg" alt="BeeKeeper Logo">
+    <form action="beekeeper.completed.html" method="GET" onSubmit="return verifyPassword(this) && usernameValid(this)">
+        <fieldset name="SignUp">
+            <label>Username</label>
+            <input type="text" name="username1" placeholder="Enter Username"><br>
+            <label>Email Address</label>
+            <input type="text" placeholder="Enter Email Address"><br>
+            <label>Birthday</label>
+            <input type="date"><br>
+            <label>Password</label>
+            <input type="password" name="password1" placeholder="Enter Password"><br>
+            <label>Verify Password</label>
+            <input type="password" name="password2" placeholder="Verify Password"><br>
+            <label>Desired Account Type</label>
+            <input type="radio" checked>
+            <label>Personal</label>
+            <input type="radio">
+            <label>Business</label>
+            <input type="radio">
+            <label>Enterprise</label>
+            <input type="radio">
+            <label>Other</label>
+        </fieldset>
+
+        <fieldset name="Pricing">
+            <table border="1px" id="prices">
+                <tr>
+                    <th></th>
+                    <th>Personal (1-3 users)</th>
+                    <th>Business (4-20 users)</th>
+                    <th>Enterprise (21+ users)</th>
+                </tr>
+                <tr>
+                    <th>1 Repo</th>
+                    <td>free</td>
+                    <td>$12 repo/month</td>
+                    <td rowspan="3">Contact Sales</td>
+                </tr>
+                <tr>
+                    <th>2-9 Repos</th>
+                    <td>$8 repo/month</td>
+                    <td>$10 repo/month</td>
+                </tr>
+                <tr>
+                    <th>10+ Repos</th>
+                    <td>$6 repo/month</td>
+                    <td>$8 repo/month</td>
+                </tr>
+                <caption>
+                    Personal accounts allow only 1 private repo, please visit
+                    our <a href="http://amazon.com" id="mainsite">main site</a> for more information
+                </caption>
+            </table>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
